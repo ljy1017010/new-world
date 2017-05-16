@@ -456,44 +456,51 @@ select::-ms-expand {
 }
 .section6 ul li{
     display: inline-block;
-    width: 28px;
-    height: 28px;
     //border: solid 1px red;
     margin-right: 25px;
 }
 .section6 ul li#qq{
-    background-image: url('../img/qq_1.png');
+    width: 25px;
+    height: 25px;
+    background: url('../img/qq.png') 0 0;
     background-repeat: no-repeat;
 }
 .section6 ul li#qq:hover{
-    background-image: url('../img/qq_2.png');
+    //background-image: url('../img/qq_2.png');
+    background: url('../img/qq.png') -24px 0;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 .section6 ul li#weibo{
-    background-image: url('../img/weibo_1.png');
+    width: 29px;
+    height: 25px;
+    background: url('../img/weibo.png') 0 0;
     background-repeat: no-repeat;
 }
 .section6 ul li#weibo:hover{
-    background-image: url('../img/weibo_2.png');
+    background: url('../img/weibo.png') -29px 0;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 .section6 ul li#tt{
-    background-image: url('../img/tt_1.png');
+    width: 29px;
+    height: 25px;
+    background: url('../img/tt.png') 0 0;
     background-repeat: no-repeat;
 }
 .section6 ul li#tt:hover{
-    background-image: url('../img/tt_2.png');
+    background: url('../img/tt.png') -29px 0;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 .section6 ul li#word{
-    background-image: url('../img/word_1.png');
+    width: 24px;
+    height: 25px;
+    background: url('../img/word.png') 0 0;
     background-repeat: no-repeat;
 }
 .section6 ul li#word:hover{
-    background-image: url('../img/word_2.png');
+    background: url('../img/word.png') -24px 0;
     background-repeat: no-repeat;
     cursor: pointer;
 }
