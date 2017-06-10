@@ -1,141 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <title>new-world</title>
-    <link type="text/css" rel="stylesheet" href="src/task7.css" />
-    <link rel="shortcut icon" href="img/logo.ico" />
+    <title>新世界</title>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="keywords" content="新世界,new-world,爱心社区，公益" />
+    <meta name="description" content="新世界是在中国深化改革、进一步敞开国门、走向世界的时代契机下诞生的。诞生伊始，就以架起中国与世界的语言桥梁为己任，自觉地承担着促进中外文化、经济和技术交流的使者责任。" />
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 </head>
 
 <body>
-    <div id="container">
-        <header>
+    <header>
+        <div class="header-inner">
             <div class="logo-area">
-                <a href="#"><img src="img/logo.png" alt="logo" /></a>
+                <a href="#"><i id="logo"></i></a>
                 <a href="#"><span>新世界</span></a>
             </div>
             <div class="login">
-                <a href="#">登录</a>
+                <a href="#" class="js-open-box">注册</a>
             </div>
-            <div class="nav">
+            <div class="header-nav">
                 <a href="#">首页</a>
-                <a href="#">最新活动</a>
-                <a href="#">项目介绍</a>
-                <a href="#">爱心社区</a>
-                <a href="#">关于我们</a>
+                <a href="#new-activity">最新活动</a>
+                <a href="#items">项目介绍</a>
+                <a href="http://www.wwfchina.org/">爱心社区</a>
+                <a href="#join-us">加入我们</a>
             </div>
-        </header>
-        <section class="section1">
-            <div class="container">
-                <div>
-                    <h1>Time of new life</h1>
-                    <p>新时代，让我们一起体验新生活，享受新生活</p>
-                    <button>开始体验</button>
-                </div>
+        </div>
+
+    </header>
+
+    <section id="section1">
+        <div id="slider-innner">
+            <div id="list" style="left: -1200px;">
+                <img src="images/slider03.jpg" alt="slider03" />
+                <img src="images/slider01.jpg" alt="slider01" />
+                <img src="images/slider02.jpg" alt="slider02" />
+                <img src="images/slider03.jpg" alt="slider03" />
+                <img src="images/slider01.jpg" alt="slider01" />
             </div>
-        </section>
-        <section class="section2">
-            <div>
-                <div class="cell1"></div>
-                <p>打造全新世界观，让你更爱你的生活</p>
+            <div id="buttons">
+                <span index="1" class="on"></span>
+                <span index="2"></span>
+                <span index="3"></span>
             </div>
-            <div>
-                <div class="cell2"></div>
-                <p>丰富多彩的公益活动，发挥新世界的主人公意识</p>
+            <a id="prev" class="arrow">&lt;</a>
+            <a id="next" class="arrow">&gt;</a>
+            <div class="fixed-content">
+                <h1>Time of new life</h1>
+                <p>新时代，让我们一起体验新生活，享受新生活</p>
+                <button>开始体验</button>
             </div>
-            <div>
-                <div  class="cell3"></div>
-                <p>时尚的新理念，超前体验未知的生活</p>
+        </div>
+
+    </section>
+    <section id="section2" >
+        <a name="new-activity"></a>
+        <div class="row">
+            <div class="col beijing-activity">
+                <span></span>
+                <h2>北京活动</h2>
+                <p>新社区联盟</p>
+                <p id="beijing-detail">打造全新世界观，让你更爱你的生活</p>
             </div>
-            <div>
-                <div class="cell4"></div>
-                <p class="no-border">完善的培养机制，培养你全新的世界观</p>
+            <div class="col shanghai-activity">
+                <span></span>
+                <h2>上海活动</h2>
+                <p>夜上海新景观探索</p>
+                <p id="shanghai-detail">丰富多彩的公益活动，发挥新世界的主人公意识</p>
             </div>
-        </section>
-        <section class="section3">
-            <div>
-                <div class="info-area">
-                    <h2>查找新世界城市活动信息</h2>
-                    <span class="line"></span>
-                    <p>每个城市的有不同的活动信息，请自主查询您所需要了解的城市</p>
-                </div>
-                <div class="select-area">
-                    <select>
-                        <option selected="selected">国家</option>
-                        <option>中国</option>
-                        <option>美国</option>
-                        <option>日本</option>
-                    </select>
-                    <select>
-                        <option selected="selected">省份</option>
-                        <option>北京市</option>
-                        <option>上海市</option>
-                        <option>湖南省</option>
-                    </select>
-                    <select>
-                        <option selected="selected">城市</option>
-                        <option>长沙</option>
-                    </select>
-                    <input type="submit" value="搜索" />
-                </div>
+            <div class="col shengzen-activity">
+                <span></span>
+                <h2>深圳活动</h2>
+                <p>全新海岸线观点站</p>
+                <p id="shengzen-detail">时尚的新理念，超前体验未知的生活</p>
             </div>
-        </section>
-        <section class="section4">
-            <div class="part-bj">
-                <img src="img/section4-1.png">
-                <p>北京活动</p>
-                <span>新社区联盟</span>
+            <div class="col xianggang-activity">
+                <span></span>
+                <h2>香港活动</h2>
+                <p>奢侈消费大放送</p>
+                <p id="xianggang-detail">完善的培养机制，培养你全新的世界观</p>
             </div>
-            <div class="part-sh">
-                <div>
-                    <p>上海活动</p>
-                    <span>夜上海新景观探索</span>
-                </div>
-                <img src="img/section4-2.png">
-            </div>
-            <div class="part-sz">
-                <img src="img/section4-3.png">
-                <p>深圳活动</p>
-                <span>全新海岸线观点站</span>
-            </div>
-            <div class="part-xg">
-                <img src="img/section4-4.png">
-                <p>香港活动</p>
-                <span>奢侈消费大放送</span>
-            </div>
-        </section>
-        <section class="section5">
-            <div class="left">
-                <div class="info">
-                    <h1 class="title">新世界</h1>
-                    <h1 class="subtitle">TIME</h1>
-                    <p>@新世界-上海</p>
-                    <span>2017.05</span>
-                </div>
+        </div>
+    </section>
+    <section id="section3">
+        <a name="items"></a>
+        <div>
+            <div class="left-logo">
+                <img src="images/new-world.png" alt="new-world" />
             </div>
             <div class="right-info">
-                <h3>新世界</h3>
+                <h2>新世界</h2>
                 <p>新世界是在中国深化改革、进一步敞开国门、走向世界的时代契机下诞生的。诞生伊始，就以架起中国与世界的语言桥梁为己任，自觉地承担着促进中外文化、经济和技术交流的使者责任。</p>
                 <button>更多详情</button>
             </div>
-        </section>
-        <section class="section6">
-            <h1>联系我们</h1>
-            <p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯</p>
-            <P>也可以通过以下任何方式关注我们动态</P>
-            <form>
-                <input type="text" placeholder="someone@email.com"><button type="submit">提交</button>
+        </div>
+
+    </section>
+    <section id="section4">
+        <a name="join-us"></a>
+        <div class="join-us">
+            <h2>成为志愿者</h2>
+            <p>新世界的大家庭需要每一个爱生活的人，如果你够年轻，有梦想，有激情，那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+        </div>
+        <div class="form-info">
+            <form method="post" action="" id="join-form">
+                <div class="full-name">
+                    <span class="star">姓名</span>
+                    <input id="acount" name="full-name" type="text" value placeholder="请输入姓名" />
+                    <p id="name-check">请输入正确的姓名</p>
+                </div>
+                <div class="age">
+                    <span class="star">年龄</span>
+                    <input id="age" name="age" type="text" value placeholder="请输入年龄" />
+                    <p id="age-check">请输入正确的年龄</p>
+                </div>
+                <div class="phone">
+                    <span class="star">手机号</span>
+                    <input id="phone" name="phone" type="text" value placeholder="请输入手机号" />
+                    <p id="phone-check">请输入正确的手机号</p>
+                </div>
+                <div class="city">
+                    <span class="star">所在城市</span>
+                    <input id="city" name="city" type="text" value placeholder="请输入所在城市" />
+                    <p id="city-check">请填写您的所在城市</p>
+                </div>
+                <div class="security-code">
+                    <span class="star">验证</span>
+                    <div id="drag"></div>
+                    <p id="code-check">no</p>
+                </div>
+                <div class= "item">
+                    <input id="item-check" name="item-check" type="checkbox" checked="checked"/>
+                    <div class="agreement-content">
+                        <p>确认的同时，我同意：<a href="#x">《新世界网站服务条款》</a>；</p>
+                        <p>并且我同意新世界按照网站服务条款第6.8条使用个人信息；</p>
+                        <p>同意新世界可通过电话 (包括语音通话、短信、或传真) 有针对性地向我提供新的产品/服务的信息。</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit">提交</button>
+                </div>
             </form>
-            <ul>
-                <li id="qq"><a href="#1"></a></li>
-                <li id="weibo"><a href="#2"></a></li>
-                <li id="tt"><a href="#3"></a></li>
-                <li id="word"><a href="#4"></a></li>
-            </ul>
-        </section>
-        <footer>
-            <p>@2017新世界</p>
-        </footer>
+        </div>
+    </section>
+
+    <aside>
+        <a href="javascript:;" id="btn">
+            <span id="top-text">回到<br>顶部</span>
+        </a>
+    </aside>
+
+    <footer>
+        <div>
+            <p>© 2017‑NOW NEW WORLD LTD. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <div class="box-login">
+        <h1>抱歉</h1>
+        <p>本网站暂不开放注册，给您带来不便，敬请谅解！</p>
+        <button id="submit">确定</button>
     </div>
+    <div class="overlay"></div>
+
+    <script src="js/main.min.js" type="text/javascript"></script>
+    <script src="js/drag.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('#drag').drag();
+    </script>
+
 </body>
+
 </html>
+
